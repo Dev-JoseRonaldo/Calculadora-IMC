@@ -8,29 +8,31 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="/script.js"></script>
 </head>
 <body>
     <div class="container">
         <div class="titulo">
         <h1>Calcule seu IMC</h1>
-        </div>
+        </div>  
         <form>
             <div class="conteudo">
                 <div class="container-peso">
                     <p>Digite seu peso (kg)</p>
                     <input  class="slider-peso" step="0.1" min="20" max="200" type="range"/> 
                     <p>Peso</p>
-                    <input class="input-number" type="number" placeholder="Ex: 52.4"/>     
+                    <input id="peso" class="input-number" type="number" placeholder="Ex: 72.4"/>     
                 </div>
                 <div class="container-altura">
-                    <p>Digite sua altura (m)</p>
-                    <input  class="slider-altura" step="0.01" min="0.5" max="2.5" type="range"/>
+                    <p>Digite sua altura (cm)</p>
+                    <input  class="slider-altura" step="0.01" min="50" max="250" type="range"/>
                     <p>Altura</p>
-                    <input class="input-number" type="number" placeholder="Ex: 1.65"/>
+                    <input id="altura" class="input-number" type="number" placeholder="Ex: 175"/>
                 </div>
             </div>
-            <input class="button-calcular" value="Calcular" type="button">
+            <input id="btnCalcular" class="button-calcular" value="Calcular" type="button">
         </form>
+        <div id="resultado"></div>
     </div>
 
 </body>
